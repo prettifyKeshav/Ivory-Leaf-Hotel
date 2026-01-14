@@ -1,0 +1,366 @@
+@import '../_var'
+
+.about-banner
+    position: relative
+    color: white
+    overflow: hidden
+    height: 100vh
+    @include media(1024)
+        height: 80vh
+    @include media(991)
+        height: 50vh
+    @include media(540)
+        height: 60vh
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: linear-gradient(360deg, rgba(0, 0, 0, 0) 56.42%, rgba(0, 0, 0, 0.86) 88.21%),linear-gradient(180deg, rgba(0, 0, 0, 0) 54.69%, rgba(0, 0, 0, 0.75) 82.1%)
+
+    .video-background 
+        video 
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            object-fit: cover
+            z-index: -1
+        .container
+            @include media(540)
+                padding: 0
+            .bg-wrapper
+                position: absolute
+                z-index: 1
+                width: 100%
+                bottom: 15%
+                left: 0
+                text-align: center
+                @include media(991)
+                    bottom: 10%
+                @include media(540)
+                    bottom: 10%
+                    margin-left: 0
+                h1
+                    max-width: 576px
+                    margin-bottom: 20px
+                    margin: auto
+                p
+                    max-width: 418px
+                    margin: auto
+                    line-height: 1.3
+
+.about-secA
+    position: relative 
+    padding: 80px 0
+    .flex-box
+        display: flex
+        justify-content: space-around
+        align-items: center
+        .col:first-child
+            position: relative
+            figure
+                width: 343px
+                height: 327px
+                line-height: 0
+                margin-left: auto
+                img
+                    height: 100%
+                    width: 100%
+                    object-fit: contain
+        .col:last-child
+            flex: 0 1 50%
+            max-width: 518px
+            .heading
+                h2
+                    max-width: 503px
+                    line-height: 1.2
+                    margin-bottom: 30px
+                p
+                    line-height: 1.4
+                
+.about-secB
+    .bg
+        background-image: url(../../../assets/images/about/about-secB.png)
+        background-repeat: no-repeat
+        background-size: cover
+        height: 96vh
+        position: relative
+        overflow: hidden
+        @include media(768)
+            height: 60vh
+        &::before
+            content: ""
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: linear-gradient(270deg, rgba(0, 0, 0, 0) 36.77%, rgba(0, 0, 0, 0.8) 62.57%)
+        figcaption
+            position: absolute
+            top: 50%
+            left: 20%
+            transform: translate(-50%, -50%)
+            @include media(768)
+                left: 50%
+        .container
+            height: 100%
+            position: relative
+            max-width: 1180px
+            @include media(768)
+                height: 60vh
+            .tab-section
+                position: absolute
+                left: 0
+                top: 50%
+                transform: translateY(-50%)
+                max-width: 40%
+                @include media(1024)
+                    left: 5%
+                @include media(768)
+                    width: 100%
+                    max-width: 90%
+                    margin: auto
+                    height: fit-content
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%,-50%)
+                .tab-nav
+                    display: flex
+                    justify-content: start
+                    gap: 50px
+                    @include media(768)
+                        justify-content: center
+                    li
+                        position: relative
+                        &::before
+                            content: ""
+                            position: absolute
+                            left: 0
+                            bottom: 0
+                            width: 0%
+                            height: 2px
+                            background-color: #ffffff
+                        a
+                            color: #FFFFFF66
+                            font-weight: 600
+                            font-size: 36px
+                            @include media(768)
+                                font-size: 30px
+                        &.active
+                            position: relative
+                            &::before
+                                content: ""
+                                position: absolute
+                                width: 100%
+                                height: 2px
+                                background-color: #ffffff
+                                transition: 0.5s ease
+                            a
+                                color: #ffffff
+                .tab-nav-content
+                    padding: 50px 0
+                    @include media(768)
+                        padding: 20px 0
+                        max-width: 60%
+                        margin: auto
+                    @include media(540)
+                        padding: 20px 0
+                        max-width: 100%
+                        margin: auto
+                    p
+                        font-weight: 400
+                        font-size: 18px
+                        line-height: 1.5
+                        margin-bottom: 20px
+                        color: #FFFFFFB2
+                        opacity: 0
+                        transition: 0.5s ease
+                        @include media(768)
+                            font-size: 16px
+                            text-align: center
+                    .active p
+                        opacity: 1
+
+.about-secC
+    position: relative 
+    padding: 80px 0
+    .flex-box
+        display: flex
+        justify-content: space-around
+        align-items: center
+        .col:first-child
+            position: relative
+            figure
+                width: 343px
+                height: 327px
+                line-height: 0
+                margin-left: auto
+                img
+                    height: 100%
+                    width: 100%
+                    object-fit: contain
+        .col:last-child
+            flex: 0 1 50%
+            max-width: 518px
+            .heading
+                h2
+                    max-width: 503px
+                    line-height: 1.2
+                    margin-bottom: 30px
+                p
+                    line-height: 1.4
+            .name
+                font-weight: 400
+                color: $white
+                font-size: 20px
+                margin: 20px 0 10px 0
+
+.about-secD
+    position: relative 
+    margin: 0px 0 60px 0
+    padding: 20px 0 50px 0
+    &::before
+        content: ""
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 47%
+        height: 1px 
+        background: #D4C6B0
+    &::after
+        content: ""
+        position: absolute
+        top: 0px    
+        right: 0
+        width: 47%
+        height: 1px 
+        background: #D4C6B0
+    .left-ico
+        position: absolute
+        bottom: -12px
+        left: 47.5%
+        transform: rotate(-180deg)
+        line-height: 0
+        svg 
+            path
+                fill: #D4C6B0
+    .right-ico
+        position: absolute
+        top: -12px
+        right: 47.5%
+        line-height: 0
+        svg 
+            path
+                fill: #D4C6B0 
+    .container
+        max-width: 1080px
+        width: 100%
+        margin: 0 auto
+    .heading
+        position: relative
+        p
+            max-width: 605px
+            line-height: 1.4
+        .swiper-nav
+            position: absolute
+            bottom: 10px
+            right: 0
+    .swiper
+        .swiper-wrapper
+            padding: 30px 0 0 0
+            .swiper-slide
+                .grid-box-item
+                    background: #FFFFFF0D
+                    border-radius: 5px
+                    padding: 30px
+                    text-align: center
+                    figure
+                        width: 44px
+                        height: 44px
+                        line-height: 0
+                        margin: auto
+                        margin-bottom: 10px
+                    h3
+                        font-weight: 400
+                        font-size: 16px
+                        text-align: center
+                        max-width: 135px
+                        margin: auto
+                    p
+                        font-weight: 700
+                        font-size: 16px
+                        line-height: 24px
+                        margin: auto
+                        margin-top: 10px
+                        color: #0000
+                        -webkit-text-fill-color: transparent
+                        background-image: $gradient-a
+                        -webkit-background-clip: text
+                        background-clip: text
+                    
+.about-secE
+    padding: 20px 0 50px 0 
+    .heading
+        text-align: center
+        margin-bottom: 40px
+    .flex-box
+        display: flex
+        justify-content: center
+        gap: 70px 
+        align-items: center
+        .colA
+            figure
+                width: 583px
+                height: 359px
+                overflow: hidden
+                line-height: 0
+                img
+                    height: 100%
+                    width: 100%
+                    object-fit: cover
+        .colB
+            flex: 0 1 50%
+            border-left: 1px solid #B89B58
+            ul
+                padding-left: 40px
+                li
+                    margin-bottom: 50px
+                    position: relative
+                    &:last-child
+                        margin-bottom: 0
+                    &::nth-last-col
+                        margin-bottom: 0
+                    &::before
+                        content: ""
+                        position: absolute
+                        top: 0
+                        left: -54px
+                        width: 26px
+                        height: 26px
+                        border: 1px solid #B89B58
+                        background: #141414
+                        border-radius: 50%
+                    &.active
+                        &::before
+                            background: #B89B58
+                    h3
+                        font-weight: 400
+                        font-size: 20px
+                        line-height: 18px
+                        -webkit-text-fill-color: #FFFFFFB2
+                        margin-bottom: 20px
+                        cursor: pointer
+                    p
+                        font-weight: 400
+                        font-size: 16px
+                        line-height: 1.4
+                        color: #FFFFFFB2
+                        max-width: 408px
+
+.summery-detail-content article 
+    display: none

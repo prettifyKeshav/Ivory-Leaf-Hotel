@@ -1,0 +1,317 @@
+@keyframes shine {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+.contact-banner {
+  position: relative;
+  color: white;
+  overflow: hidden;
+  height: 100vh;
+}
+@media only screen and (max-width: 1024px) {
+  .contact-banner {
+    height: 80vh;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .contact-banner {
+    height: 50vh;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .contact-banner {
+    height: 60vh;
+  }
+}
+.contact-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0) 56.42%, rgba(0, 0, 0, 0.86) 88.21%), linear-gradient(180deg, rgba(0, 0, 0, 0) 54.69%, rgba(0, 0, 0, 0.75) 82.1%);
+}
+.contact-banner .video-background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+@media only screen and (max-width: 540px) {
+  .contact-banner .video-background .container {
+    padding: 0;
+  }
+}
+.contact-banner .video-background .container .bg-wrapper {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  bottom: 15%;
+  left: 0;
+  text-align: center;
+}
+@media only screen and (max-width: 991px) {
+  .contact-banner .video-background .container .bg-wrapper {
+    bottom: 10%;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .contact-banner .video-background .container .bg-wrapper {
+    bottom: 10%;
+    margin-left: 0;
+  }
+}
+.contact-banner .video-background .container .bg-wrapper h1 {
+  max-width: 576px;
+  margin-bottom: 20px;
+  margin: auto;
+}
+.contact-banner .video-background .container .bg-wrapper p {
+  max-width: 418px;
+  margin: auto;
+  line-height: 1.3;
+}
+
+.contact-secA {
+  overflow: hidden;
+  padding: 70px 0;
+  position: relative;
+  overflow: hidden;
+}
+.contact-secA .flex-box {
+  justify-content: center;
+  gap: 100px;
+}
+.contact-secA .flex-box .flex-box-item {
+  text-align: center;
+}
+.contact-secA .flex-box .flex-box-item .figure {
+  width: 43px;
+  height: 43px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.contact-secA .flex-box .flex-box-item .figure img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.contact-secA .flex-box .flex-box-item h3 {
+  font-weight: 400;
+  font-size: 20px;
+  color: #FFFFFF;
+  line-height: 24px;
+  -webkit-text-fill-color: var(--white);
+  margin-bottom: 10px;
+}
+.contact-secA .flex-box .flex-box-item a, .contact-secA .flex-box .flex-box-item p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6980392157);
+  max-width: 320px;
+  margin: auto;
+  margin-top: 20px;
+}
+.contact-secA .flex-box .flex-box-item .btn {
+  padding: 8px 21px;
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 12px;
+}
+.contact-secA .flex-box .flex-box-item .btn span {
+  font-weight: 700;
+  font-size: 12px;
+}
+.contact-secA .flex-box .flex-box-item .btn figure {
+  line-height: 1;
+}
+.contact-secA .flex-box .flex-box-item .social-icons a {
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  line-height: 0;
+  overflow: hidden;
+  position: relative;
+  color: var(--black);
+  border: 1px solid white;
+  padding: 10px;
+}
+.contact-secA .flex-box .flex-box-item .social-icons a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  background: var(--gradient-a);
+}
+.contact-secA .flex-box .flex-box-item .social-icons a:hover {
+  background: white;
+}
+.contact-secA .flex-box .flex-box-item .social-icons a:hover svg path {
+  fill: var(--primary);
+}
+.contact-secA .flex-box .flex-box-item .social-icons a::before {
+  border-radius: 50%;
+  transform: scale(1.5);
+  z-index: -1;
+  opacity: 0;
+  transition: 0.2s ease;
+}
+.contact-secA .flex-box .flex-box-item .social-icons a:not(:last-child) {
+  margin-right: 4px;
+}
+.contact-secA .flex-box .flex-box-item .social-icons a svg {
+  width: 24px;
+  height: 24px;
+}
+.contact-secA .flex-box .flex-box-item .social-icons a svg path {
+  fill: white;
+}
+.contact-secA .flex-box .line {
+  border-right: 1px solid rgba(255, 255, 255, 0.3019607843);
+  height: -webkit-fill-available;
+}
+
+.contact-secB {
+  overflow: hidden;
+  position: relative;
+  overflow: hidden;
+}
+.contact-secB::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #202020;
+}
+@media only screen and (max-width: 540px) {
+  .contact-secB {
+    padding: 50px 0;
+  }
+}
+.contact-secB .box {
+  margin: auto;
+  max-width: 680px;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+.contact-secB .box .heading {
+  text-align: center;
+  margin-bottom: 70px;
+}
+@media only screen and (max-width: 540px) {
+  .contact-secB .box .heading {
+    margin-bottom: 30px;
+  }
+}
+.contact-secB .box .heading h2 {
+  -webkit-text-fill-color: var(--white);
+  line-height: 1.1;
+  max-width: 520px;
+  margin: auto;
+}
+.contact-secB .box .heading p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+}
+@media only screen and (max-width: 540px) {
+  .contact-secB .box .heading p {
+    max-width: 80%;
+    margin: 10px auto;
+  }
+}
+.contact-secB .box .form {
+  margin: auto;
+  --item: 2;
+  --textareaheight: 66px;
+}
+@media only screen and (max-width: 768px) {
+  .contact-secB .box .form {
+    max-width: 80%;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .contact-secB .box .form {
+    --item: 1;
+    --gaptb: 22px;
+    max-width: 90%;
+  }
+}
+.contact-secB .box .form .btn {
+  margin: auto;
+}
+.contact-secB .box .form .dropdown-input {
+  text-align: left;
+}
+.contact-secB .box .form .dropdown-input .list li {
+  color: var(--white);
+  transition: 0.5s ease;
+}
+.contact-secB .box .form .dropdown-input .list li.focus {
+  color: white;
+}
+.contact-secB .box .form .dropdown-input .list li:hover {
+  color: var(--white);
+  background: var(--white);
+}
+.contact-secB .box .form .btn2 {
+  margin: 10px auto 0px auto;
+}
+
+.contact-secC {
+  overflow: hidden;
+  height: auto;
+  margin-bottom: -6.9px;
+  position: relative;
+}
+.contact-secC iframe {
+  width: 100%;
+  margin-bottom: 0;
+  height: 536px;
+}
+@media only screen and (max-width: 991px) {
+  .contact-secC iframe {
+    height: 50vh;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .contact-secC iframe {
+    height: 60vh;
+  }
+}
+
+.check-availability {
+  display: none;
+}/*# sourceMappingURL=contact.css.map */
