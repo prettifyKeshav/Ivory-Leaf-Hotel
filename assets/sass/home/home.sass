@@ -8,9 +8,9 @@
     @include media(1024)
         height: 80vh
     @include media(991)
-        height: 50vh
-    @include media(540)
         height: 60vh
+    @include media(540)
+        height: 70vh
     &::before
         content: ''
         position: absolute
@@ -21,6 +21,9 @@
         background: linear-gradient(0deg, rgba(0, 0, 0, 0) 79.88%, rgba(0, 0, 0, 0.7) 91.23%),linear-gradient(270deg, rgba(0, 0, 0, 0) 45.31%, rgba(0, 0, 0, 0.6) 87.78%)
         @include media(768)
             background: linear-gradient(0deg, rgba(0, 0, 0, 0) 79.88%, rgba(0, 0, 0, 0.7) 91.23%), linear-gradient(180deg, rgba(0, 0, 0, 0) 35.31%, rgba(0, 0, 0, 0.6) 87.78%)
+        @include media(540)
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0) 79.88%, rgba(0, 0, 0, 0.7) 91.23%), linear-gradient(180deg, rgba(0, 0, 0, 0) 35.31%, rgb(0 0 0 / 89%) 87.78%)
+        
     .video-background 
         video 
             position: absolute
@@ -77,6 +80,8 @@
                     @include media(768)
                         margin: auto
                         margin-bottom: 15px
+                    @include media(540)
+                        max-width: 80%
                 p
                     max-width: 498px
                     margin-bottom: 20px
@@ -102,7 +107,8 @@
         height: 100vh
         position: relative
         @include media(768)
-            height: 70vh
+            height: 80vh
+        @include media(540)
         &::before
             content: ""
             position: absolute
@@ -114,6 +120,8 @@
             z-index: 1
             @include media(768)
                 background: linear-gradient(180deg, rgba(0, 0, 0, 0) 54.61%, rgba(0, 0, 0, 0.8) 80.45%),linear-gradient(180deg, rgba(0, 0, 0, 0.7) 1.95%, rgba(0, 0, 0, 0) 88.59%)
+            @include media(540)
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 24.61%, rgb(0 0 0 / 88%) 80.45%), linear-gradient(180deg, rgb(0 0 0 / 63%) 1.95%, rgba(0, 0, 0, 0) 88.59%)
         img
             height: 100%
             width: 100%
@@ -134,7 +142,6 @@
                         opacity: 1
                     h2
                         font-weight: 400
-                        font-size: 40px
                         line-height: 46px
                         -webkit-text-fill-color: white
                         margin-bottom: 20px
@@ -169,6 +176,9 @@
             @include media(768)
                 width: 100%
                 gap: 60px
+            @include media(540)
+                gap: 10px
+                width: 90%
             li
                 color: #F9D672
                 font-weight: 400
@@ -179,6 +189,12 @@
                 padding: 10px 0 
                 gap: 10px
                 font-family: $Optima
+                @include media(540)
+                    font-size: 18px
+                    padding: 10px 0
+                    gap: 0px
+                    text-align: center
+                    line-height: 1.2
                 span
                     line-height: 0
                     opacity: 0
@@ -202,13 +218,25 @@
     overflow: hidden
     .heading
         position: relative
+        @include media(540)
+            text-align: center
         p
             max-width: 605px
             line-height: 1.4
+            @include media(768)
+                max-width: 435px
+        h2
+            @include media(540)
+                margin-bottom: 10px
         .swiper-nav
             position: absolute
             bottom: 50px
             right: 0
+            @include media(540)
+                bottom: 0px
+                right: 50%
+                transform: translate(50%)
+                display: none
     .swiper
         .swiper-wrapper
             padding: 50px 0 0 0 
@@ -266,6 +294,8 @@
         width: 47%
         height: 1px 
         background: #D4C6B0
+    @include media(540)
+        padding: 50px 0 30px 0
     .left-ico
         position: absolute
         bottom: -12px
@@ -286,6 +316,12 @@
     .heading
         max-width: 454px
         margin-bottom: 30px
+        @include media(768)
+            margin: auto
+            text-align: center
+            margin-bottom: 30px
+            h2
+                margin-bottom: 10px
         p
             font-family: $Century
             font-weight: 700
@@ -297,7 +333,9 @@
         display: flex
         justify-content: space-around
         align-items: center
-
+        @include media(768)
+            flex-direction: column
+            gap: 30px
         .col:first-child
             flex: 0 1 50%
             max-width: 518px
@@ -359,6 +397,8 @@
     .video-bg
         height: 99vh
         position: relative
+        @include media(768)
+            height: 52vh
         &::before
             content: ""
             position: absolute
@@ -368,6 +408,8 @@
             height: 100%
             width: 100%
             z-index: 1
+            @include media(540)
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 48.92%, rgb(0 0 0) 84.79%)
         video
             height: 100%
             width: 100%
@@ -388,6 +430,10 @@
             translate: (-50%)
             @include media(1024)
                 gap: 50px
+            @include media(540)
+                gap: 10px
+                width: 100%
+                justify-content: space-around
             li
                 color: #FFFFFF
                 display: flex
@@ -401,6 +447,14 @@
                 line-height: 1.1
                 text-align: center
                 cursor: pointer
+                @include media(768)
+                    font-size: 25px
+                @include media(540)
+                    font-size: 20px
+                    flex-direction: column
+                    line-height: 1.3
+                    gap: 5px
+                    width: 80px
                 span
                     line-height: 0
                     opacity: 0
@@ -411,6 +465,8 @@
                         opacity: 1
             .line
                 position: relative
+                @include media(540)
+                    display: none
                 &::before
                     content: ""
                     position: absolute
@@ -426,11 +482,15 @@
         text-align: center
         h2
             line-height: 1
+            @include media(540)
+                margin-bottom: 0
     .grid-box
         display: grid
         grid-template-columns: repeat(6, 1fr)
         gap: 15px
         margin: 50px 0
+        @include media(540)
+            grid-template-columns: repeat(2, 1fr)
         .grid-box-item
             overflow: hidden
             display: inline-block
@@ -445,6 +505,9 @@
                 grid-row: span 2
                 grid-column: span 2
                 height: 100%
+            &:nth-child(4),&:last-child 
+                @include media(540)
+                    grid-column: span 2
             img
                 height: 100%
                 width: 100%

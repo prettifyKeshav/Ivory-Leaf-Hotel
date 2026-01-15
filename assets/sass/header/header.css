@@ -674,6 +674,11 @@ h1 {
     font-size: 48px;
   }
 }
+@media only screen and (max-width: 540px) {
+  h1 {
+    font-size: 38px;
+  }
+}
 
 h2, h3 {
   font-weight: 400;
@@ -683,6 +688,13 @@ h2, h3 {
   background-image: var(--gradient-a);
   -webkit-background-clip: text;
   background-clip: text;
+}
+@media only screen and (max-width: 540px) {
+  h2, h3 {
+    font-size: 29px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
 }
 
 h3 {
@@ -723,6 +735,11 @@ p {
   line-height: 30px;
   text-transform: capitalize;
   color: rgba(255, 255, 255, 0.6980392157);
+}
+@media only screen and (max-width: 540px) {
+  p {
+    line-height: 1.5;
+  }
 }
 
 .sec-pad {
@@ -2739,6 +2756,11 @@ header .header-wrapper .colA {
   flex: 0 1 154px;
   transition: 0.7s ease;
 }
+@media only screen and (max-width: 540px) {
+  header .header-wrapper .colA {
+    flex: 0 1 130px;
+  }
+}
 header .header-wrapper .colB {
   display: grid;
 }
@@ -2829,7 +2851,7 @@ header .header-wrapper .colB .menu-list .ham-parent .ham-btn span {
 }
 @media only screen and (max-width: 1024px) and (max-width: 540px) {
   header.header-fixed .header-wrapper .colA {
-    flex: 0 1 180px;
+    flex: 0 1 80px;
   }
 }
 @media (max-width: 991px) {
@@ -2966,6 +2988,26 @@ header .header-wrapper .colB .menu-list .ham-parent .ham-btn span {
   position: relative;
   z-index: 3;
 }
+@media only screen and (max-width: 768px) {
+  .check-availability .form {
+    --item: 2;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .check-availability .form {
+    --item: 1;
+    padding: 40px 0 10px 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .check-availability .form .btn {
+    grid-column: span var(--item);
+    margin: auto;
+  }
+}
+.check-availability .form .btn span {
+  line-height: 1;
+}
 .check-availability .form label {
   text-transform: uppercase;
   font-family: "Century Gothic";
@@ -3018,9 +3060,20 @@ footer .top-sec {
   justify-content: space-between;
   padding: 50px 0 0 0;
 }
+@media only screen and (max-width: 540px) {
+  footer .top-sec {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
 footer .top-sec .flex-box-item:first-child figure {
   width: 154px;
   height: 51px;
+}
+@media only screen and (max-width: 540px) {
+  footer .top-sec .flex-box-item:first-child figure {
+    margin: auto;
+  }
 }
 footer .top-sec .flex-box-item:first-child figure img {
   height: 100%;
@@ -3212,14 +3265,26 @@ footer .bottom-sec .grid-box .grid-box-item:nth-child(2) {
     gap: 30px;
   }
 }
-@media only screen and (max-width: 768px) and (max-width: 768px) {
+@media only screen and (max-width: 540px) {
   footer .bottom-sec .grid-box .grid-box-item:nth-child(2) {
-    justify-content: space-between;
-    gap: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 40px;
   }
 }
 footer .bottom-sec .grid-box .grid-box-item:nth-child(2) .col-md {
   width: 190px;
+}
+@media only screen and (max-width: 540px) {
+  footer .bottom-sec .grid-box .grid-box-item:nth-child(2) .col-md {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 540px) {
+  footer .bottom-sec .grid-box .grid-box-item:nth-child(2) .col-md:last-child {
+    grid-column: span 2;
+    width: 100%;
+  }
 }
 footer .bottom-sec .grid-box .grid-box-item:nth-child(2) .col-md h6 {
   font-family: "Century Gothic";
@@ -3311,7 +3376,8 @@ footer .bottom-footer {
 @media only screen and (max-width: 540px) {
   footer .bottom-footer {
     padding-bottom: 100px;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    gap: 20px;
   }
 }
 footer .bottom-footer .flex-box {
@@ -3359,11 +3425,16 @@ footer .bottom-footer ul {
   gap: 30px;
 }
 footer .bottom-footer ul li a {
-  font-weight: 400;
+  font-weight: 700;
   color: #9C9A9A;
   font-family: "Century Gothic";
   font-size: 14px;
   line-height: 24px;
+}
+@media only screen and (max-width: 540px) {
+  footer .bottom-footer ul li a {
+    color: rgba(255, 255, 255, 0.6980392157);
+  }
 }
 
 .ham-pop {
@@ -3387,6 +3458,11 @@ footer .bottom-footer ul li a {
   display: flex;
   flex-direction: column;
   position: relative;
+}
+@media only screen and (max-width: 540px) {
+  .ham-pop .model-body {
+    gap: 30px;
+  }
 }
 .ham-pop .model-body::before {
   content: "";
