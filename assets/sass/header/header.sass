@@ -233,6 +233,8 @@ header
             @include media(768)
                 grid-column: span var(--item)
                 margin: auto
+            @include media(540)
+                margin: 20px auto 0  
             span
                 line-height: 1
         label
@@ -436,6 +438,7 @@ footer
                     display: grid
                     grid-template-columns: repeat(2,1fr)
                     margin-bottom: 40px
+                    gap: 30px 20px
                 .col-md
                     width: 190px
                     @include media(540)

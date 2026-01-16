@@ -114,6 +114,11 @@
   line-height: 0;
   margin-left: auto;
 }
+@media only screen and (max-width: 540px) {
+  .about-secA .flex-box .col:first-child figure {
+    width: 100%;
+  }
+}
 .about-secA .flex-box .col:first-child figure img {
   height: 100%;
   width: 100%;
@@ -154,6 +159,11 @@
 @media only screen and (max-width: 768px) {
   .about-secB .bg {
     height: 60vh;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .about-secB .bg {
+    height: 50vh;
   }
 }
 .about-secB .bg::before {
@@ -320,6 +330,11 @@
   line-height: 0;
   margin-left: auto;
 }
+@media only screen and (max-width: 540px) {
+  .about-secC .flex-box .col:first-child figure {
+    width: 100%;
+  }
+}
 .about-secC .flex-box .col:first-child figure img {
   height: 100%;
   width: 100%;
@@ -329,6 +344,11 @@
 .about-secC .flex-box .col:last-child {
   flex: 0 1 50%;
   max-width: 518px;
+}
+@media only screen and (max-width: 768px) {
+  .about-secC .flex-box .col:last-child {
+    text-align: center;
+  }
 }
 .about-secC .flex-box .col:last-child .heading h2 {
   max-width: 503px;
@@ -395,6 +415,12 @@
 .about-secD .heading {
   position: relative;
 }
+@media only screen and (max-width: 540px) {
+  .about-secD .heading h2 {
+    text-align: center;
+    margin: 0;
+  }
+}
 .about-secD .heading p {
   max-width: 605px;
   line-height: 1.4;
@@ -403,6 +429,11 @@
   position: absolute;
   bottom: 10px;
   right: 0;
+}
+@media only screen and (max-width: 540px) {
+  .about-secD .heading .swiper-nav {
+    display: none;
+  }
 }
 .about-secD .swiper .swiper-wrapper {
   padding: 30px 0 0 0;
@@ -464,6 +495,14 @@
   overflow: hidden;
   line-height: 0;
 }
+@media only screen and (max-width: 768px) {
+  .about-secE .flex-box .colA figure {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
 .about-secE .flex-box .colA figure img {
   height: 100%;
   width: 100%;
@@ -473,6 +512,16 @@
 .about-secE .flex-box .colB {
   flex: 0 1 50%;
   border-left: 1px solid #B89B58;
+}
+@media only screen and (max-width: 768px) {
+  .about-secE .flex-box .colB {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .about-secE .flex-box .colB {
+    width: 90%;
+  }
 }
 .about-secE .flex-box .colB ul {
   padding-left: 40px;

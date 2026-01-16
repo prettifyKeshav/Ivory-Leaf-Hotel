@@ -3005,6 +3005,11 @@ header .header-wrapper .colB .menu-list .ham-parent .ham-btn span {
     margin: auto;
   }
 }
+@media only screen and (max-width: 540px) {
+  .check-availability .form .btn {
+    margin: 20px auto 0;
+  }
+}
 .check-availability .form .btn span {
   line-height: 1;
 }
@@ -3270,6 +3275,7 @@ footer .bottom-sec .grid-box .grid-box-item:nth-child(2) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 40px;
+    gap: 30px 20px;
   }
 }
 footer .bottom-sec .grid-box .grid-box-item:nth-child(2) .col-md {
