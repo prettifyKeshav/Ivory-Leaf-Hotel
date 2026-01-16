@@ -52,6 +52,9 @@
                     max-width: 418px
                     margin: auto
                     line-height: 1.3
+                    @include media(540)
+                        max-width: 90%
+                        margin: 20px  auto 0
 
 .contact-secA
     overflow: hidden
@@ -61,6 +64,11 @@
     .flex-box
         justify-content: center
         gap: 100px
+        @include media(1024)
+            gap: 50px
+        @include media(768)
+            flex-direction: column
+            gap: 30px
         .flex-box-item
             text-align: center
             .figure

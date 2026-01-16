@@ -384,13 +384,13 @@ $(function () {
         centeredSlides: true,
         breakpoints: {
             0: {
-                slidesPerView: 1.2,
+                slidesPerView: 1.3,
                 spaceBetween: 10,
                 speed: 500,
             },
             675: {
-                slidesPerView: 2,
-                spaceBetween: 20,
+                slidesPerView: 1.7,
+                spaceBetween: 80,
                 speed: 1000,
             },
             992: {

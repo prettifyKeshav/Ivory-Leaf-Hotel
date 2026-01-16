@@ -85,6 +85,12 @@
   margin: auto;
   line-height: 1.3;
 }
+@media only screen and (max-width: 540px) {
+  .contact-banner .video-background .container .bg-wrapper p {
+    max-width: 90%;
+    margin: 20px auto 0;
+  }
+}
 
 .contact-secA {
   overflow: hidden;
@@ -95,6 +101,17 @@
 .contact-secA .flex-box {
   justify-content: center;
   gap: 100px;
+}
+@media only screen and (max-width: 1024px) {
+  .contact-secA .flex-box {
+    gap: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contact-secA .flex-box {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 .contact-secA .flex-box .flex-box-item {
   text-align: center;

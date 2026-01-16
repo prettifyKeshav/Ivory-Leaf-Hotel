@@ -199,7 +199,7 @@
   gap: 10px;
   padding: 8px 20px;
   background: var(--primary);
-  color: #000;
+  color: #fff;
   text-decoration: none;
   font-weight: 700;
   position: relative;
@@ -247,6 +247,7 @@
   border-radius: 5px;
   padding: 6px 10px;
   background: #E9EFF8;
+  display: none;
 }
 .blog-secA .grid-box .grid-box-item figcaption .flex .time p {
   font-family: Montserrat;
@@ -647,7 +648,7 @@
 @media only screen and (max-width: 540px) {
   .blog-details-secB .swiper-wrapper .swiper-slide .grid-box-item figcaption {
     text-align: center;
-    padding: 20px 10px 10px 10px;
+    padding: 20px 10px 20px 10px;
   }
 }
 .blog-details-secB .swiper-wrapper .swiper-slide .grid-box-item figcaption h4 {
@@ -670,7 +671,7 @@
 }
 @media only screen and (max-width: 540px) {
   .blog-details-secB .swiper-wrapper .swiper-slide .grid-box-item figcaption p {
-    padding-bottom: 20px;
+    margin-bottom: 30px;
   }
 }
 .blog-details-secB .swiper-wrapper .swiper-slide .grid-box-item figcaption .flex {
@@ -738,6 +739,7 @@
   border-radius: 5px;
   padding: 6px 10px;
   background: #E9EFF8;
+  display: none;
 }
 .blog-details-secB .swiper-wrapper .swiper-slide .grid-box-item figcaption .flex .time p {
   font-family: Montserrat;
